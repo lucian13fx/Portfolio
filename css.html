@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./formstyle.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="./app.js"></script>
+    <link rel="icon" href="./p.jpg" />
+    <title>Portfolio | Templates</title>
+  </head>
+  <body>
+    <div id="filter" class="filter"></div>
+    <nav>
+      <div class="wrapper">
+        <div class="nav-cont">
+          <a href="./index.html"><label class="logo">Portfolio</label></a>
+          <ul id="ul">
+            <div class="sidelogo">
+              <div>
+                <label class="logo2">Portfolio</label>
+              </div>
+              <div class="closebtn">
+                <a href="#" onclick="closeNav()" class="close"
+                  ><i class="bi bi-x"></i
+                ></a>
+              </div>
+            </div>
+            <div class="menu-links">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./templates.html">Templates</a></li>
+              <li><a href="#" class="active">CSS</a></li>
+              <li><a href="#">JavaScript</a></li>
+            </div>
+          </ul>
+          <label id="icon">
+            <a href="#" onclick="openNav()" class="open"
+              ><i class="bi bi-list"></i
+            ></a>
+          </label>
+        </div>
+      </div>
+    </nav>
+    <div class="wrapper">
+      <div class="sidemenu-cont">
+
+        <div class="side-menu">
+          <a class="tablinks" onclick="openCity(event, 'Colors')" id="defaultOpen">Colors</a>
+          <a class="tablinks" onclick="openCity(event, 'Backgr')">Backgrounds</a>
+          <a class="tablinks" onclick="openCity(event, 'Margin')">Margin</a>
+          <a class="tablinks" onclick="openCity(event, 'Margin')">Borders</a>
+          <a class="tablinks" onclick="openCity(event, 'Margin')">Padding</a>
+          <a class="tablinks" onclick="openCity(event, 'Margin')">Height/Width</a>
+          <a class="tablinks" onclick="openCity(event, 'Margin')">Box Model</a>
+          <a class="tablinks" onclick="openCity(event, 'Margin')">Outline</a>
+          <a class="tablinks" onclick="openCity(event, 'Margin')">Display</a>
+        </div>
+
+        <div class="welcome" id="wc">
+          <h3>Welcome to CSS section, please select a topic from the left-side menu</h3>
+          <img src="./csslogo.png" alt="csslogo">
+        </div>
+
+        <div id="Margin" class="tabcontent">
+          <h3>CSS Margin</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut
+            aliquid, eaque perspiciatis praesentium iusto id rerum distinctio
+            quisquam? Vitae, quibusdam? Incidunt ullam nobis laboriosam. Aperiam
+            sapiente excepturi officiis nam obcaecati.
+          </p>
+        </div>
+
+        <div id="Colors" class="tabcontent">
+          <h3>CSS Colors</h3>
+          <p>In CSS, a color can be specified by using a predefined color name:</p>
+          <div class="row">
+            <div class="column"  style="background-color: tomato;">
+                <a>Tomato</a>
+            </div>
+            <div class="column"  style="background-color: orange;">
+                 <a>Orange</a>
+            </div>
+            <div class="column"  style="background-color: dodgerblue;">
+                <a>DodgerBlue</a>
+            </div>
+            <div class="column"  style="background-color: mediumseagreen;">
+                 <a>MediumSeaGreen</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column" style="background-color: gray;">
+                <a>Gray</a>
+            </div>
+            <div class="column" style="background-color: slateblue;">
+                 <a>SlateBlue</a>
+            </div>
+            <div class="column" style="background-color: violet;">
+                <a>Violet</a>
+            </div>
+            <div class="column" style="background-color: lightgray;">
+                 <a>LightGrey</a>
+            </div>
+          </div>
+          
+        </div>
+
+        <div id="Backgr" class="tabcontent">
+          <h3>CSS Backgrounds</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate
+            quod repellat quam est eum dicta, neque aliquam fugiat. Qui
+            blanditiis similique cum. Dolor et minus debitis nobis deserunt est
+            quam.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!----------------Begining-->
+
+    <!-------------------End-->
+    <div class="sep"></div>
+    <div class="footer">
+      <div class="wrapper">
+        <div class="line-links">
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-github"></i></a>
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+        </div>
+        <div class="row">
+          <div class="column">
+            <h4>Contacts</h4>
+            <p>Phone: +37360329812</p>
+            <p>Email: moldovan.1999@mail.ru</p>
+            <p>Adress: Earth, Milky Way</p>
+          </div>
+          <div class="column">
+            <h4>Useful Links</h4>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>Templates</p>
+          </div>
+          <div class="column">
+            <h4>Get help</h4>
+            <p>Get more help</p>
+            <p>Get extra help</p>
+          </div>
+          <div class="column">
+            <h4>Social</h4>
+            <p>Instagram</p>
+            <p>Facebook</p>
+            <p>Myspace</p>
+          </div>
+        </div>
+        <div class="copy">
+          <small>2021 Ain't Shit reserved</small>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

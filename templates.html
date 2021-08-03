@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./formstyle.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="./app.js"></script>
+    <link rel="icon" href="./p.jpg">
+    <title>Portfolio | Templates</title>
+  </head>
+  <body>
+    <div id="filter" class="filter"></div>
+   <nav>
+      <div class="wrapper">
+        <div class="nav-cont">
+          <a href="./index.html"><label class="logo">Portfolio</label></a>
+          <ul id="ul">
+            <div class="sidelogo">
+              <div>
+                <label class="logo2">Portfolio</label>
+              </div>
+              <div class="closebtn">
+                <a href="#" onclick="closeNav()" class="close"><i class="bi bi-x"></i></a>
+              </div>
+            </div>
+            <div class="menu-links">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="#" class="active">Templates</a></li>
+              <li><a href="./css.html">CSS</a></li>
+              <li><a href="#">JavaScript</a></li>
+            </div>
+          </ul>
+          <label id="icon">
+           <a href="#" onclick="openNav()" class="open"><i class="bi bi-list"></i></a>
+          </label>
+        </div>
+      </div>
+    </nav>
+    <div class="wrapper">
+      <h3>Sign in forms</h3>
+      <div class="form-container">
+      <h2>Sign up for your account</h2>
+      <form class="my-form">
+        <div class="form-group">
+          <input type="text" name="name" placeholder="Enter full name"/>
+        </div>
+        <div class="form-group">
+          <input type="text" name="email" placeholder="Enter email address"/>
+        </div>
+        <div class="agreem">
+          <p>
+            By signing up, I accept the Portfolio <span><a href="#">Cloud Terms of Service</a></span> and acknowledge the <span><a href="#">Privacy Policy</a></span>.
+          </p>
+        </div>
+        <input class="button" type="button" value="Sign up" />
+      </form>
+    </div>
+    <h1>More templates to come...</h1>
+    </div>
+    <div class="sep"></div>
+    <div class="footer">
+      <div class="wrapper">
+        <div class="line-links">
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-github"></i></a>
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+        </div>
+        <div class="row">
+          <div class="column">
+            <h4>Contacts</h4>
+            <p>Phone: +37360329812</p>
+            <p>Email: moldovan.1999@mail.ru</p>
+            <p>Adress: Earth, Milky Way</p>
+          </div>
+          <div class="column">
+            <h4>Useful Links</h4>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>Templates</p>
+          </div>
+          <div class="column">
+            <h4>Get help</h4>
+            <p>Get more help</p>
+            <p>Get extra help</p>
+          </div>
+          <div class="column">
+            <h4>Social</h4>
+            <p>Instagram</p>
+            <p>Facebook</p>
+            <p>Myspace</p>
+          </div>
+        </div>
+        <div class="copy">
+          <small>2021 Ain't Shit reserved</small>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
