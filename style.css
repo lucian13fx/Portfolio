@@ -385,7 +385,6 @@ nav #icon {
 }
 .side-cont {
   display: block;
-  box-sizing: border-box;
 }
 .side {
   height: fit-content;
@@ -394,13 +393,8 @@ nav #icon {
   margin-top: 20px;
   border-radius: 10px;
   background-color: rgb(233, 233, 233);
-  transition: 0.5s;
 }
 
-.side:hover {
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  transition: 0.2s;
-}
 #wimg {
   background-image: url(./eff1a960ca3377f82072f5656dcd5181.jpg);
   color: #333;
@@ -481,7 +475,12 @@ nav #icon {
 .min-links {
   display: none;
 }
-/*----------------------------*/
+.joke {
+  margin-top: 10vh;
+  color: rgb(161, 161, 161);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  display: none;
+}
 
 /*-------------------Media Enquires---------------------*/
 
@@ -489,6 +488,9 @@ nav #icon {
   nav #icon {
     display: block;
     font-size: 20px;
+  }
+  .joke {
+    display: block;
   }
   .logo2 {
     display: block;
@@ -554,12 +556,18 @@ nav #icon {
     color: #333;
     font-size: 18px;
   }
+  .min-links a:hover {
+    color: #5fa4e6;
+  }
 }
 
 @media screen and (max-width: 500px) {
   .box1 {
     display: block;
     font-size: 15px;
+  }
+   .box{
+    display: block;
   }
   .min-links a {
     font-size: 17px;
@@ -624,14 +632,14 @@ nav #icon {
   .tabcontent .row {
     display: block;
   }
-  .box {
-    display: block;
-  }
   .side {
     width: 100%;
   }
   .side-cont {
     margin-right: 5vw;
     margin-bottom: 20px;
+  }
+  .menu-links li {
+    padding: 12px 0;
   }
 }
