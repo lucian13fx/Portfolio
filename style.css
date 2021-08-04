@@ -116,6 +116,11 @@ nav #icon {
   border-radius: 10px;
   border: 1px solid #5fa4e6;
   box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+  transition: 0.5s;
+}
+.box1:hover {
+  box-shadow: rgba(3, 102, 214, 0.4) 0px 0px 0px 4px;
+  transition: 0.2s;
 }
 .box {
   display: flex;
@@ -310,7 +315,7 @@ nav #icon {
   backdrop-filter: blur(4px);
   display: none;
 }
-.filter1{
+.filter1 {
   position: absolute;
   height: 100vh;
   width: 100%;
@@ -323,6 +328,21 @@ nav #icon {
 .close-btn {
   text-align: end;
   padding: 8px 3px;
+}
+.clbtn {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  background-color: #b9ddff;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.clbtn:hover {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  transition: 0.2s;
+}
+.clbtn i {
+  color: black;
 }
 
 .close-btn a {
@@ -357,9 +377,13 @@ nav #icon {
   background-color: rgb(233, 233, 233);
   border-radius: 10px;
   height: fit-content;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  transition: 0.5s;
 }
-.side-cont{
+.side-menu:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  transition: 0.2s;
+}
+.side-cont {
   display: block;
   box-sizing: border-box;
 }
@@ -370,14 +394,21 @@ nav #icon {
   margin-top: 20px;
   border-radius: 10px;
   background-color: rgb(233, 233, 233);
+  transition: 0.5s;
 }
-#wimg{
+
+.side:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  transition: 0.2s;
+}
+#wimg {
   background-image: url(./eff1a960ca3377f82072f5656dcd5181.jpg);
   color: #333;
 }
 .side a {
   color: #333;
   display: block;
+  width: fit-content;
 }
 .side a:hover {
   background: linear-gradient(
@@ -447,7 +478,7 @@ nav #icon {
   width: 150px;
   border-radius: 10px;
 }
-.min-links{
+.min-links {
   display: none;
 }
 /*----------------------------*/
@@ -514,15 +545,15 @@ nav #icon {
   nav ul.show {
     left: 0;
   }
-  .min-links{
-  display: block;
-  margin: 20px;
-}
-.min-links a{
-  padding: 7px;
-  color: #333;
-  font-size: 18px;
-}
+  .min-links {
+    display: block;
+    margin: 20px;
+  }
+  .min-links a {
+    padding: 7px;
+    color: #333;
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -530,9 +561,9 @@ nav #icon {
     display: block;
     font-size: 15px;
   }
-  .min-links a{
-  font-size: 17px;
-}
+  .min-links a {
+    font-size: 17px;
+  }
   .box1 .image img {
     height: 130px;
     width: 100%;
@@ -565,7 +596,6 @@ nav #icon {
   }
   .content {
     padding: 0;
-
   }
   .content1 {
     padding: 20px;
@@ -595,13 +625,13 @@ nav #icon {
     display: block;
   }
   .box {
-  display: block;
-}
-.side{
-  width: 100%;
-}
-.side-cont{
-  margin-right: 5vw;
-  margin-bottom: 20px;
-}
+    display: block;
+  }
+  .side {
+    width: 100%;
+  }
+  .side-cont {
+    margin-right: 5vw;
+    margin-bottom: 20px;
+  }
 }
