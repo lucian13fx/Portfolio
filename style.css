@@ -104,11 +104,15 @@ nav #icon {
 }
 
 .box1 {
+  position: absolute;
   display: block;
+  z-index: 99;
+  margin-right: 5vw;
   margin-top: 20px;
-  font-family: "Work Sans", sans-serif;
+  font-size: 18px;
+  font-family: monospace;
   border-radius: 10px;
-  background-color: rgba(22, 168, 235, 0.116);
+  background-color: #d5e9fd;
   border-radius: 10px;
   border: 1px solid #5fa4e6;
   box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
@@ -128,11 +132,12 @@ nav #icon {
 }
 .content {
   padding: 20px;
+  width: 100%;
 }
 .content1 {
   padding: 20px 20px 0px 20px;
   font-weight: 700;
-  color: rgba(51, 51, 51, 0.719);
+  color: rgba(0, 0, 0, 0.719);
   margin: auto;
 }
 .htmm {
@@ -305,6 +310,15 @@ nav #icon {
   backdrop-filter: blur(4px);
   display: none;
 }
+.filter1{
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  z-index: 20;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  display: block;
+}
 
 .close-btn {
   text-align: end;
@@ -345,6 +359,37 @@ nav #icon {
   height: fit-content;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
+.side-cont{
+  display: block;
+  box-sizing: border-box;
+}
+.side {
+  height: fit-content;
+  width: 300px;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: rgb(233, 233, 233);
+}
+#wimg{
+  background-image: url(./eff1a960ca3377f82072f5656dcd5181.jpg);
+  color: #333;
+}
+.side a {
+  color: #333;
+  display: block;
+}
+.side a:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(16, 16, 180, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .side-menu a {
   display: block;
   border: unset;
@@ -401,6 +446,9 @@ nav #icon {
   margin: 10px;
   width: 150px;
   border-radius: 10px;
+}
+.min-links{
+  display: none;
 }
 /*----------------------------*/
 
@@ -466,12 +514,25 @@ nav #icon {
   nav ul.show {
     left: 0;
   }
+  .min-links{
+  display: block;
+  margin: 20px;
+}
+.min-links a{
+  padding: 7px;
+  color: #333;
+  font-size: 18px;
+}
 }
 
 @media screen and (max-width: 500px) {
   .box1 {
     display: block;
+    font-size: 15px;
   }
+  .min-links a{
+  font-size: 17px;
+}
   .box1 .image img {
     height: 130px;
     width: 100%;
@@ -504,6 +565,7 @@ nav #icon {
   }
   .content {
     padding: 0;
+
   }
   .content1 {
     padding: 20px;
@@ -532,4 +594,14 @@ nav #icon {
   .tabcontent .row {
     display: block;
   }
+  .box {
+  display: block;
+}
+.side{
+  width: 100%;
+}
+.side-cont{
+  margin-right: 5vw;
+  margin-bottom: 20px;
+}
 }
