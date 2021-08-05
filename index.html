@@ -9,13 +9,13 @@
     <link rel="icon" href="./p.jpg" />
     <title>Portfolio | Home</title>
   </head>
-  <body onload="myFunction()">
+  <body>
     <div id="filter" class="filter"></div>
-    <div id="filter1" class="filter1"></div>
+   <!-- <div id="filter1" class="filter1"></div>-->
     <nav>
       <div class="wrapper">
         <div class="nav-cont">
-          <a href="./index.html"><label class="logo">Portfolio</label></a>
+          <a href="./index.html"><label class="logo"><span class="ico">&lt;P&gt;</span><span class="port">Portfolio</span></label></a>
           <ul id="ul">
             <div class="sidelogo">
               <div>
@@ -39,10 +39,6 @@
               <a href="#"><i class="bi bi-facebook"></i></a>
               <a href="#"><i class="bi bi-linkedin"></i></a>
             </div>
-            <div class="joke">
-              <h4>I like elephants.</h4>
-              <p>Everything else is <br />irrelephant</p>
-            </div>
           </ul>
           <label id="icon">
             <a href="#" onclick="openNav()" class="open"
@@ -53,6 +49,7 @@
       </div>
     </nav>
     <div class="wrapper">
+      <!--
       <div class="box1" id="this">
         <div class="content1">
           <p>
@@ -63,12 +60,12 @@
           </p>
         </div>
         <div class="close-btn">
-          <a href="#" onclick="closeMsg()" class="clbtn"
+          <a onclick="closeMsg()" class="clbtn"
             ><i class="bi bi-x"></i
           ></a>
         </div>
 
-        <!--<div class="image">
+        <div class="image">
           <div class="htmm">
             <h2>Find me here</h2>
             <ul>
@@ -87,8 +84,9 @@
             </ul>
           </div>
           <img src="./bluegradient.jpg" alt="alt" />
-        </div>-->
-      </div>
+        </div>
+      </div>-->
+            
       <div class="box">
         <div class="side-cont">
           <div class="side">
@@ -116,17 +114,21 @@
             <a href=""><i class="bi bi-caret-right-fill"></i>Twitter</a>
             <a href=""><i class="bi bi-caret-right-fill"></i>GitHub</a>
           </div>
+          <div class="side">
+            <h3>What's new</h3>
+            <p>Nothing :)</p>
+          </div>
         </div>
         <div class="content">
-          <h3>Things about HTML</h3>
+          <h2>What is HTML</h2>
           <p>
-            The HyperText Markup Language, or HTML is the standard markup
-            language for documents designed to be displayed in a web browser. It
-            can be assisted by technologies such as Cascading Style Sheets (CSS)
-            and scripting languages such as JavaScript.
+            HTML (Hypertext Markup Language) is the code that is used to
+            structure a web page and its content. For example, content could be
+            structured within a set of paragraphs, a list of bulleted points, or
+            using images and data tables.
           </p>
           <br />
-          <p>Web components:</p>
+          <p>A webpage is made using the following 3 languages:</p><br>
           <div class="listt">
             <ul>
               <li>HTML</li>
@@ -135,6 +137,13 @@
             </ul>
           </div>
           <br />
+          <h3>The anatomy of an HTML element</h3>
+          <p>HTML consists of a series of elements, which you use to enclose, or wrap, different parts of the content to make it appear a certain way, or act a certain way. The enclosing tags can make a word or image hyperlink to somewhere else, can italicize words, can make the font bigger or smaller, and so on.  For example, take the folowing line of content:</p>
+          <br>
+          <p class="codeex">
+            &lt;<span style="color: firebrick;">p</span>&gt;I like elephants. Everything else is irrelephant&lt;/<span style="color: firebrick;">p</span>&gt;
+          </p>
+          <br>
           <h3>HTML</h3>
           <p>
             HTML elements are the building blocks of HTML pages. With HTML

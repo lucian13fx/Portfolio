@@ -15,6 +15,7 @@ body {
 }
 
 nav {
+  background-color: rgb(241, 241, 241);
   height: 39px;
   width: 100%;
   display: flex;
@@ -28,6 +29,30 @@ nav {
   color: #333;
   padding: 40px 0;
 }
+/*------------Scrollbar------------*/
+::selection {
+  background: #5fa5e688;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(170, 170, 170);
+  border-radius: 3px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(129, 129, 129);
+}
+/*---------------------------------*/
 nav .nav-cont {
   display: flex;
   align-items: center;
@@ -39,7 +64,15 @@ label.logo {
   font-weight: bold;
   color: #333;
   cursor: pointer;
+  padding-left: 10px;
 }
+.ico {
+  background-color: #333;
+  color: rgb(243, 243, 243);
+  padding: 4px 0;
+  border-radius: 6px;
+}
+
 label.logo:hover {
   background: linear-gradient(
     90deg,
@@ -90,6 +123,7 @@ nav #icon {
   cursor: pointer;
   display: none;
 }
+
 .hello {
   font-size: 30px;
   font-weight: bold;
@@ -127,9 +161,11 @@ nav #icon {
   margin-top: 20px;
   font-family: "Work Sans", sans-serif;
 }
-.content h3 {
+.content h3,
+.content h2 {
   color: #333;
 }
+
 .box1 .image img {
   height: 100%;
   width: 200px;
@@ -138,6 +174,16 @@ nav #icon {
 .content {
   padding: 20px;
   width: 100%;
+}
+.content p {
+  margin-top: 5px;
+}
+.codeex {
+  font-family: monospace;
+  font-size: 16px;
+  background-color: #e6e6e681;
+  padding: 20px 5px;
+  border-left: 4px solid #5fa4e6;
 }
 .content1 {
   padding: 20px 20px 0px 20px;
@@ -181,7 +227,6 @@ nav #icon {
   color: #333;
   display: none;
 }
-
 .sep {
   height: 1px;
   margin: 0;
@@ -329,6 +374,7 @@ nav #icon {
   text-align: end;
   padding: 8px 3px;
 }
+
 .clbtn {
   color: rgb(0, 0, 0);
   font-size: 20px;
@@ -340,6 +386,7 @@ nav #icon {
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
   transition: 0.2s;
+  cursor: pointer;
 }
 .clbtn i {
   color: black;
@@ -387,8 +434,7 @@ nav #icon {
   display: block;
 }
 .side {
-  height: fit-content;
-  width: 300px;
+  width: 250px;
   padding: 10px;
   margin-top: 20px;
   border-radius: 10px;
@@ -489,6 +535,7 @@ nav #icon {
     display: block;
     font-size: 20px;
   }
+
   .joke {
     display: block;
   }
@@ -566,9 +613,10 @@ nav #icon {
     display: block;
     font-size: 15px;
   }
-   .box{
-    display: block;
+  .box {
+    display: table;
   }
+
   .min-links a {
     font-size: 17px;
   }
@@ -604,6 +652,7 @@ nav #icon {
   }
   .content {
     padding: 0;
+    display: table-header-group;
   }
   .content1 {
     padding: 20px;
@@ -633,13 +682,19 @@ nav #icon {
     display: block;
   }
   .side {
-    width: 100%;
+    width: unset;
   }
   .side-cont {
-    margin-right: 5vw;
     margin-bottom: 20px;
+    display: table-footer-group;
   }
-  .menu-links li {
-    padding: 12px 0;
+  .codeex {
+    font-size: 14px;
+  }
+  label.logo {
+    padding-left: 0;
+  }
+  .port {
+    display: none;
   }
 }
