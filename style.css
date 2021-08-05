@@ -73,16 +73,6 @@ label.logo {
   border-radius: 6px;
 }
 
-label.logo:hover {
-  background: linear-gradient(
-    90deg,
-    rgba(16, 16, 180, 1) 0%,
-    rgba(0, 212, 255, 1) 100%
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 
 .sidelogo {
   display: flex;
@@ -317,9 +307,10 @@ nav #icon {
   background-color: rgb(241, 241, 241);
   padding: 2px 5px;
   border-radius: 5px;
+  font-size: 20px;
 }
 .open:hover {
-  background-color: rgb(235, 235, 235);
+  background-color: rgb(226, 226, 226);
 }
 
 .contact-me {
