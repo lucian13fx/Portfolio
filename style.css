@@ -76,7 +76,7 @@ label.logo {
   padding-left: 10px;
 }
 .ico {
-  background-color: #333;
+  background-color: rgb(66, 66, 66);
   color: rgb(243, 243, 243);
   padding: 4px 0;
   border-radius: 6px;
@@ -617,6 +617,7 @@ nav #icon {
     font-size: 20px;
   }
   nav {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     background-image: url(./eff1a960ca3377f82072f5656dcd5181.jpg);
     background-repeat: no-repeat;
     background-size: cover;
