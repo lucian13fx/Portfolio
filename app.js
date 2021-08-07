@@ -2,7 +2,7 @@ function closeNav() {
   document.getElementById("ul").style.left = "-100%";
   document.getElementById("filter").style.display = "none";
   document.body.style.overflow = "unset";
-  document.body.style.height = "auto";
+//  document.body.style.height = "auto";
     document.getElementById("nav").style.top = "0";
 
 }

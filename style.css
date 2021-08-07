@@ -9,6 +9,9 @@
   text-decoration: none;
   list-style: none;
 }
+.divider{
+  height:calc(100% - 40px);
+}
 html {
   height: 100%;
 }
@@ -609,6 +612,60 @@ nav #icon {
   width: fit-content;
 }
 
+
+.custom-shape-divider-top-1628332081 {
+    position: absolute;
+    background: linear-gradient(
+    90deg,
+    rgba(16, 16, 180, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+    top: 200px;
+    left: 0;
+    z-index: -33;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1628332081 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 137px;
+}
+
+.custom-shape-divider-top-1628332081 .shape-fill {
+    fill: #FFFFFF;
+}
+.welcometxt{
+display: flex;
+align-items: center;
+  height:calc(100% - 40px);
+}
+.wlcmcont{
+  position: absolute;
+  margin-left: 5vw;
+  margin-top: -100px;
+  display: block;
+}
+.welcometxt h1{
+  width: fit-content;
+  font-size: 100px;
+  color: white;
+  background-color: #333;
+  font-family: monospace;
+}
+.welcometxt h2{
+  font-size: 30px;
+  width: fit-content;
+  font-family: monospace;
+  margin-top: 10px;
+  color: white;
+    background-color: #333;
+
+}
 /*-------------------Media Quires---------------------*/
 
 @media screen and (max-width: 909px) {
@@ -801,4 +858,32 @@ nav #icon {
   .port {
     display: none;
   }
+
+  .welcometxt{
+display: flex;
+align-items: center;
+  height:calc(100% - 40px);
+}
+.wlcmcont{
+  position: absolute;
+  margin-left: 5vw;
+  margin-top: -100px;
+  display: block;
+}
+.welcometxt h1{
+  width: fit-content;
+  font-size: 60px;
+  color: white;
+  background-color: #333;
+  font-family: monospace;
+}
+.welcometxt h2{
+  font-size: 20px;
+  width: fit-content;
+  font-family: monospace;
+  margin-top: 10px;
+  color: white;
+    background-color: #333;
+
+}
 }
