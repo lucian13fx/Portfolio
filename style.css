@@ -647,6 +647,8 @@ align-items: center;
 .wlcmcont{
   position: absolute;
   margin-left: 5vw;
+    margin-right: 5vw;
+
   margin-top: -100px;
   display: block;
 }
@@ -859,15 +861,9 @@ align-items: center;
     display: none;
   }
 
-  .welcometxt{
-display: flex;
-align-items: center;
-  height:calc(100% - 40px);
-}
 .wlcmcont{
   position: absolute;
   margin-left: 5vw;
-  margin-top: -100px;
   display: block;
 }
 .welcometxt h1{
