@@ -25,7 +25,9 @@ nav {
   height: 39px;
   width: 100%;
   display: flex;
+  margin-top: -50px;
   align-items: center;
+  transition: 0.4s;
 }
 .wrapper {
   margin: 0 auto;
@@ -615,11 +617,9 @@ nav #icon {
 
 .custom-shape-divider-top-1628332081 {
     position: absolute;
-    background: linear-gradient(
-    90deg,
-    rgba(16, 16, 180, 1) 0%,
-    rgba(0, 212, 255, 1) 100%
-  );
+    background-image: url(./eff1a960ca3377f82072f5656dcd5181.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     top: 200px;
     left: 0;
     z-index: -33;
@@ -646,11 +646,12 @@ align-items: center;
 }
 .wlcmcont{
   position: absolute;
-  margin-left: 5vw;
+  margin-left: -50%;
     margin-right: 5vw;
-
   margin-top: -100px;
   display: block;
+  transition: .4s;
+  transition-delay: 0.4s;
 }
 .welcometxt h1{
   width: fit-content;
@@ -861,10 +862,13 @@ align-items: center;
     display: none;
   }
 
-.wlcmcont{
+#wlcmcont{
   position: absolute;
-  margin-left: 5vw;
+  margin-left: -100%;
+  margin-top: -40px;
   display: block;
+  transition: .4s;
+  transition-delay: 0.3s;
 }
 .welcometxt h1{
   width: fit-content;
@@ -874,7 +878,7 @@ align-items: center;
   font-family: monospace;
 }
 .welcometxt h2{
-  font-size: 20px;
+  font-size: 18px;
   width: fit-content;
   font-family: monospace;
   margin-top: 10px;
