@@ -27,4 +27,7 @@ function closeMsg() {
 function ght() {
   document.getElementById("wlcmcont").style.marginLeft = "5vw";
   document.getElementById("nav").style.marginTop = "0";
+  document.getElementById("scrl").style.bottom = "50px";
 }
+
+
