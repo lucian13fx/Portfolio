@@ -546,10 +546,10 @@ nav #icon {
   padding: 10px;
   z-index: 20;
   border-radius: 10px;
-    background-color: rgb(233, 233, 233);
+  background-color: rgb(233, 233, 233);
 }
 .side2::-webkit-scrollbar-track {
-    background: rgb(233, 233, 233);
+  background: rgb(233, 233, 233);
 }
 .side22 {
   display: none;
@@ -864,7 +864,11 @@ nav #icon {
     position: fixed;
     z-index: 21;
     top: 0;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+
+box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+
+
     background-image: url(./eff1a960ca3377f82072f5656dcd5181.jpg);
     background-repeat: no-repeat;
     background-size: cover;
