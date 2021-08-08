@@ -25,7 +25,7 @@ nav {
   height: 39px;
   width: 100%;
   display: flex;
-  margin-top: -50px;
+  /*margin-top: -50px;*/
   align-items: center;
   transition: .4s;
 }
@@ -449,9 +449,20 @@ nav #icon {
 .side-cont2 {
   display: block;
 }
+.side-cont2 p{
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.side-cont2 p:hover{
+  background-color: rgb(218, 218, 218);
+}
 .side-cont2 .side a {
   padding: 5px 0;
   width: auto;
+}
+.side-cont2 .side2 li{
+  border-bottom: 1px solid rgb(207, 207, 207);
 }
 .side-cont2 .side li:hover {
   background-color: rgb(224, 224, 224);
@@ -459,6 +470,20 @@ nav #icon {
 .side-cont2 .side a:hover {
   border-left: 1px solid #5fa4e6;
 }
+
+
+.side-cont2 .side2 a {
+  padding: 5px 0;
+  width: auto;
+}
+.side-cont2 .side2 li:hover {
+  background-color: rgb(224, 224, 224);
+}
+.side-cont2 .side2 a:hover {
+  border-left: 1px solid #5fa4e6;
+}
+
+
 .side {
   width: 250px;
   padding: 10px;
@@ -466,6 +491,47 @@ nav #icon {
   border-radius: 10px;
   background-color: rgb(233, 233, 233);
 }
+/*Side cont CSS*/
+.side2 {
+  display: none;
+  position: relative;
+  width: 250px;
+  padding: 10px;
+  margin-top: -11px;
+  z-index: 20;
+  border-radius:10px;
+  background-color: rgb(233, 233, 233);
+}
+
+.side2 a {
+  color: #333;
+  display: block;
+  width: fit-content;
+}
+.side2 a:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(16, 16, 180, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.dropbtn{
+   width: 270px;
+   background-color: rgb(233, 233, 233);
+   padding: 10px;
+   box-sizing: border-box;
+   font-size: 18px;
+   border-radius: 10px;
+   margin-top: 20px;
+}
+.show{
+  display:block;
+}
+
+/*End side cont CSS*/
 
 #wimg {
   background-image: url(./eff1a960ca3377f82072f5656dcd5181.jpg);
@@ -702,9 +768,6 @@ align-items: center;
     transition: 0.2s;
   }
 
-  .joke {
-    display: block;
-  }
   .logo2 {
     display: block;
     margin-top: 20px;
@@ -772,6 +835,33 @@ align-items: center;
   .min-links a:hover {
     color: #5fa4e6;
   }
+  .dropbtn{
+    margin: 0;
+  width: 100%;
+}
+.box1{
+  display: block;
+}
+   .box {
+    display: table;
+  }
+  .content {
+    padding: 0;
+  }
+  .content1 {
+    padding: 20px;
+  }
+   .side {
+    width: unset;
+  }
+  .side2 {
+    width: unset;
+    margin-bottom: 20px;
+  }
+  label.logo {
+    padding-left: 0;
+  }
+  
 }
 
 @media screen and (max-width: 500px) {
@@ -849,6 +939,9 @@ align-items: center;
     display: block;
   }
   .side {
+    width: unset;
+  }
+  .side2 {
     width: unset;
   }
   #toptop {
