@@ -36,6 +36,10 @@ nav {
   margin: 0 auto;
   width: 90vw;
 }
+
+.flex{
+  display: flex;
+}
 .wrapper h1 {
   color: #333;
   padding: 40px 0;
@@ -447,7 +451,16 @@ nav #icon {
   display: block;
 }
 .side-cont2 {
+  top: 50px;
+  position: fixed;
   display: block;
+}
+.sidecontner{
+  display: block;
+  width: fit-content;
+}
+.place{
+  width: 270px;
 }
 .side-cont2 p{
   display: flex;
@@ -494,10 +507,9 @@ nav #icon {
 /*Side cont CSS*/
 .side2 {
   display: none;
-  position: relative;
+  position: absolute;
   width: 250px;
   padding: 10px;
-  margin-top: -11px;
   z-index: 20;
   border-radius:10px;
   background-color: rgb(233, 233, 233);
@@ -525,7 +537,7 @@ nav #icon {
    box-sizing: border-box;
    font-size: 18px;
    border-radius: 10px;
-   margin-top: 20px;
+   margin-top: 29px;
 }
 .show{
   display:block;
@@ -836,8 +848,14 @@ align-items: center;
     color: #5fa4e6;
   }
   .dropbtn{
-    margin: 0;
-  width: 100%;
+    margin-top: 0;
+    width: 100vw;
+    border-radius: 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+} 
+
+.side-cont2 {
+  top: 39px;
 }
 .box1{
   display: block;
@@ -855,13 +873,13 @@ align-items: center;
     width: unset;
   }
   .side2 {
-    width: unset;
+    width: 100vw;
     margin-bottom: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
   label.logo {
     padding-left: 0;
-  }
-  
+  }  
 }
 
 @media screen and (max-width: 500px) {
